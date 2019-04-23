@@ -17,7 +17,7 @@ class CategoryController extends Controller {
     public function actionView($id) {
         $goods = new Good();
         $goods = $goods->getGoodsCategories($id);
-        $this->view->title =  'Суши Шоп | ' . $goods[0]['category'];
+        $this->view->title =  'Суши Шоп | ' . explode(' ', $goods[0]['name'])[0];
         return $this->render('view', compact('goods'));
     }
 

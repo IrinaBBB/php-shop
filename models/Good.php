@@ -44,4 +44,5 @@ class Good extends ActiveRecord {
 
 
 
+
 }

@@ -14,6 +14,4 @@ class Category extends ActiveRecord {
     public function getCategories() {
         return Category::find()->asArray()->all();
     }
-
-
 }
